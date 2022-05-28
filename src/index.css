@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root {
+  display: flex;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  background-color: red;
+}
+
+.chat-list {
+  width: 650px;
+  height: 400px;
+  background-color: bisque;
+  overflow: hidden;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-container input {
+  width: 100%;
+  outline: solid 1px #ddd;
+  padding: 10px 0;
+  border: none;
+  text-indent: 10px;
+  font-size: 16px;
+}
+
+.chat-list .chat-item {
+  background-color: #72a5d2;
+  display: inline-flex;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin: 5px;
+}
+
+.chat-item-container {
+  display: flex;
+}
+
+.chat-item-container.from-me {
+  justify-content: flex-end;
 }
